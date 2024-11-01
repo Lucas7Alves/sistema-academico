@@ -1,0 +1,28 @@
+# Ignorar a pasta de dependências do Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pasta do Jest para cache e resultados de cobertura de testes
+coverage/
+
+# Configurações específicas do VS Code
+.vscode/
+
+# Ambiente do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivo de configuração de ambiente (não colocar dados sensíveis no repositório)
+.env
+
+# Arquivo de bloqueio Yarn (se você estiver usando npm, o yarn.lock não é necessário)
+yarn.lock
+
+# Arquivo de bloqueio do pacote do Node.js
+package-lock.json

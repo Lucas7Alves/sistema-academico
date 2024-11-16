@@ -1,24 +1,22 @@
 name: Teste Automático
 on:
   pull_request:
-  branches:
-    - main
+    branches:
+      - main
 jobs:
   run-tests:
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
 
-  steps:
-    - name: Checkout do código
-      uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-    - name: Configurar Node.js
-    uses: actions/setup-node@v4
+      - name: Instalar dependências
+        run: npm install
 
-    with: 
-      node-version: 18
-
-    - name: Instalar dependências   
-      run: npm install
-
-    - name: Rodar testes
-      run: npm test
+      - name: Rodar testes
+        run: npm test

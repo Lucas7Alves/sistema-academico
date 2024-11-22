@@ -1,6 +1,6 @@
-const lancarNotas = require("../funcoes/lancamentoNotas");
+const lancarNotas = require("../calculo/lancamentoNotas");
 
-describe('lançarNotas', () => {
+describe('lancarNotas', () => {
 
   test('deve lançar Notas salvas com sucesso', () => {
     expect(lancarNotas(7.5, 8.2)).toBe('Notas salvas com sucesso');

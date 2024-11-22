@@ -9,6 +9,7 @@ on:
       - main
       - lancamento
       - CalculoMedia
+      - statusAlunos
 
 jobs:
   run-tests:
